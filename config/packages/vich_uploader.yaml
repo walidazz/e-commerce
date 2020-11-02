@@ -5,3 +5,16 @@ vich_uploader:
         article_image:
             uri_prefix: /images/articles
             upload_destination: '%kernel.project_dir%/public/images/articles'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+            inject_on_load: true
+            delete_on_update: true
+            delete_on_remove: true 
+            
+            
+        attachments:
+            uri_prefix: /images/attachments
+            upload_destination: '%kernel.project_dir%/public/images/attachments'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+            inject_on_load: true
+            delete_on_update: true
+            delete_on_remove: true  
