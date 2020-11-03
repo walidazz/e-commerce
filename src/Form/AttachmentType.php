@@ -5,7 +5,10 @@ namespace App\Form;
 use App\Entity\Image;
 use Symfony\Component\Form\AbstractType;
 use Vich\UploaderBundle\Form\Type\VichFileType;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use Symfony\Component\Form\FormBuilderInterface;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Action;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Actions;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class AttachmentType extends AbstractType
@@ -23,4 +26,6 @@ class AttachmentType extends AbstractType
             'data_class' => Image::class,
         ]);
     }
+
+
 }
